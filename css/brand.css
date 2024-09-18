@@ -1,0 +1,343 @@
+
+#brand .centered_content {width:1000px;}
+#brand .half_content {width:50%; box-sizing:border-box;}
+#brand .half_content.align_right {margin-left:50%;}
+.lc_brand_view {position:relative;}
+.owl-carousel .owl-item .item {overflow:hidden;}
+
+#brand {float:left; width:50%; box-sizing:border-box;}
+
+/*! brand */
+#brand {padding-left:200px;}
+/*= header */
+#brand_header {position:fixed; top:0; left:100%; z-index:500; width:100px; margin-left:-100px; padding-right:100px; height:100%; background:#2f3339; text-align:center; transition:all .4s ease;}
+#brand_header:hover {margin-left:-200px;}
+#brand_header .logo_official {overflow:hidden; height:40px;}
+#brand_header .logo_official .logo,
+#brand_header .logo_official .official {display:block; height:40px; background:url(../img/gnb_brand_menu_1.png) no-repeat; text-indent:-9999em;}
+#brand_header .logo_official .logo {background-position:0 50%; transition:margin-top .4s ease .55s;}
+#brand_header .logo_official .official {background-position:-95px 50%; transition:background .2s ease;}
+#brand_header .logo_official .official:hover {background-color:#000; background-position:-105px 50%;}
+#brand_gnb {overflow:hidden; vertical-align:top; height: 100%;}
+#brand_gnb > ul {overflow:hidden; overflow-y:scroll; width:121px; height:calc(100% - 40px);}
+#brand_gnb .main a,
+#brand_gnb .main span {display:block; position:relative; height:100px;}
+#brand_gnb .main span {background:url(../img/gnb_brand_menu_2.png) no-repeat; text-indent:-9999em; opacity:.5; filter:alpha(opacity=50); transition:all .3s ease;}
+#brand_gnb .main a:before {position:absolute; top:0; left:0; bottom:0; z-index:-1; width:0; content:""; transition:width .13s linear .13s;}
+
+/*맥주*/
+#brand_gnb .gnb_a .main a:before {background:#ffc100;}
+#brand_gnb .gnb_a .main span {background-position:0 0;}
+/*소주*/
+#brand_gnb .gnb_b .main a:before {background:#99cc41;}
+#brand_gnb .gnb_b .main span {background-position:0 -100px;}
+/*위스키*/
+#brand_gnb .gnb_c .main a:before {background:#f68a0a;}
+#brand_gnb .gnb_c .main span {background-position:0 -200px;}
+/*와인*/
+#brand_gnb .gnb_l .main a:before {background:#bb2b2b;}
+#brand_gnb .gnb_l .main span {background-position:0 -300px;}
+/*수입와인*/
+#brand_gnb .gnb_d .main a:before {background:#7436b5;}
+#brand_gnb .gnb_d .main span {background-position:0 -400px;}
+/*사케*/
+#brand_gnb .gnb_h .main a:before,
+#brand_gnb .gnb_j .main a:before {background:#2dabdf;}
+#brand_gnb .gnb_h .main span,
+#brand_gnb .gnb_j .main span {background-position:0 -500px;}
+/*기타주류*/
+#brand_gnb .gnb_e .main a:before {background:#ff617f;}
+#brand_gnb .gnb_e .main span {background-position:0 -600px;}
+/*인터네셔널*/
+#brand_gnb .gnb_f .main a:before {background:#727272;}
+#brand_gnb .gnb_f .main span {background-position:0 -700px;}
+/*스피릿*/
+#brand_gnb .gnb_m .main a:before {background:#00c7b2;}
+#brand_gnb .gnb_m .main span {background-position:0 -800px;}
+
+/*#brand_gnb .gnb_g .main a:before {background:#29d9cf;}*/
+/*#brand_gnb .gnb_g .main span {background-position:0 -600px;}*/
+
+
+#brand_gnb .on .main span,
+#brand_gnb .current .main span,
+#brand_gnb [class^="gnb_"]:hover .main span {opacity:1; filter:alpha(opacity=100);}
+#brand_gnb .on .main a:before,
+#brand_gnb [class^="gnb_"]:hover .main a:before {width:100px; transition-delay:0s;}
+#brand_gnb .sub {overflow:hidden; position:absolute; top:0; right:0; bottom:0; left:100px; width:100px; padding-top:40px; background:#2f3339; opacity:0;}
+#brand_gnb .sub:before {position:absolute; top:0; left:0; bottom:0; z-index:-1; width:0; content:""; transition:width .13s linear .13s;}
+#brand_gnb .on .sub,
+#brand_gnb [class^="gnb_"]:hover .sub {z-index:10; opacity:1;}
+#brand_gnb [class^="gnb_"]:hover .sub {z-index:20;}
+#brand_gnb .on.up .sub {z-index:30;}
+#brand_gnb .on .sub:before,
+#brand_gnb [class^="gnb_"]:hover .sub:before {width:100px;}
+/*맥주*/
+#brand_gnb .gnb_a .sub:before {background:#ffc100;}
+/*소주*/
+#brand_gnb .gnb_b .sub:before {background:#99cc41;}
+/*위스키*/
+#brand_gnb .gnb_c .sub:before {background:#f68a0a;}
+/*와인*/
+#brand_gnb .gnb_l .sub:before {background:#bb2b2b;}
+/*수입와인*/
+#brand_gnb .gnb_d .sub:before {background:#7436b5;}
+/*사케*/
+#brand_gnb .gnb_h .sub:before,
+#brand_gnb .gnb_j .sub:before {background:#2dabdf;}
+/*기타주류*/
+#brand_gnb .gnb_e .sub:before {background:#ff617f;}
+/*인터네셔널*/
+#brand_gnb .gnb_f .sub:before {background:#727272;}
+/*스피릿*/
+#brand_gnb .gnb_m .sub:before {background:#00c7b2;}
+/*#brand_gnb .gnb_g .sub:before {background:#29d9cf;}*/
+
+
+#brand_gnb .sub ul {overflow:hidden; overflow-y:scroll; width:121px; height:100%;}
+#brand_gnb .sub ul li {width:100px;}
+#brand_gnb .sub a {display:block; width:100px; height:100px; margin:0 auto; background-repeat:no-repeat; background-position:0 0;}
+#brand_gnb .sub span {display:block; height:100%; background:inherit; background-position:-100px 0; text-indent:-9999em; cursor:pointer; opacity:0; filter:alpha(opacity=0); transform-origin:50% 50%; transform:scale(.8); transition:all .15s ease;}
+#brand_gnb .sub .on span,
+#brand_gnb .sub a:hover span {opacity:1; transform:scale(1); filter:alpha(opacity=100);}
+#brand_gnb .sub .on span {transition-delay:.25s;}
+#brand_gnb .sub .current {background-position:-200px 0;}
+#brand_gnb_scroll {position:absolute; bottom:0; left:0; width:100px; height:20px; background:#ccc url(../img/bu_gnb_brand_scroll.png) no-repeat 50% 50%; background-color:rgba(0, 0, 0, 0.2);}
+
+
+
+/*= 19세 체크 */
+#brand_age_check {display:none; overflow:auto; position:fixed; top:0; right:0; bottom:0; left:0; z-index:1500; background:#225afb url(/assets/images/brand/common/bg_agecheck.jpg) no-repeat 50% 50%; background-size:cover; text-align:center;}
+#brand_age_check h1 {padding:50px 0 0 40px; text-align:left; opacity:.5;}
+#brand_age_check h2 {padding:200px 0 70px;}
+#brand_age_check form {min-width:1000px;}
+#brand_age_check .alert {color:#fff; line-height:22px;}
+#brand_age_check .alert em {display:inline-block; width:18px; height:18px; margin-right:10px; border-radius:11px; border:2px solid #30ffe8; color:#30ffe8; font-style:normal; font-size:11px; line-height:18px;}
+#brand_age_check .alert span {color:#30ffe8; font-weight:normal;}
+#brand_age_check .select {padding:25px 0 35px;}
+#brand_age_check .select select {display:inline-block; width:175px; height:72px; margin:0 3px; border:1px solid #fff; background:#fff; color:#1f59d0; font-size:16px;}
+#brand_age_check .checkbox span {color:#c1d2f6;}
+#brand_age_check .checkbox span:before {top:0; margin-top:3px;}
+#brand_age_check .checkbox span:after {top:0; margin-top:8px; background:#fff;}
+#brand_age_check .submit {padding:50px 0 30px;}
+#brand_age_check .submit button {width:200px; height:42px; border:1px solid #fff; background:none; color:#fff; font-weight:200; font-size:16px;}
+#brand_age_check .close {position:absolute; top:50px; right:50px;}
+
+.on_brand #brand_age_check .close {display:none;}
+
+
+
+/*= section header */
+.brand_section_header {padding:110px 0 40px;}
+.brand_section_header:after {display:table; clear:both; content:"";}
+.brand_section_header .title {position:relative; height:60px; color:#222; font-weight:200; font-size:35px; font-family: "Harmony", NanumBarunGothic, "나눔바른고딕", "나눔고딕", NanumGothic, "돋움", Dotum, sans-serif;  line-height: 1.1; text-align:center; vertical-align: top;}
+.brand_section_header .title:before {position:absolute; left:50%; bottom:0; width:30px; height:1px; margin-left:-15px; background:#222; content:"";}
+.brand_section_header .title img {vertical-align:top;}
+.brand_section_header .summary {padding-top:30px; text-align:center;}
+.brand_section_header .search {float:right; padding-top:30px;}
+.brand_section_header .selectbox {width:250px; border-color:#000;}
+
+
+
+/*= top */
+#brand_top a {margin-left:480px;}
+#brand_top.fixed a {margin-left:580px; bottom: -50px;}
+.on_official_main #brand_top {display:none;}
+.on_brand #brand_top {display:block;}
+
+
+
+/*= content */
+/* #brand_content:after {display:block; height:100px; background:#292929; content:"";} */
+#brand_content {word-break:keep-all;}
+#brand_content .control button {display:none; position:absolute; top:0; width:48px; height:48px; border:1px solid #dcdcdc; border-color:rgba(0,0,0,.2); background-color:#fff; background-color:rgba(255,255,255,.2); background-repeat:no-repeat; background-position:50% 50%; text-indent:-9999em;}
+#brand_content .control .prev {left:-100px; background-image:url(../img/bu_pagination_prev.png);}
+#brand_content .control .next {right:-100px; background-image:url(../img/bu_pagination_next.png);}
+
+/*=content brand*/
+.brand_product_info .tit {display:block; padding-top:20px; color:#282828; font-size:11px; line-height:1; text-transform:uppercase;}
+.brand_product_info .table {margin-top:8px; border-top:1px solid #707070;}
+.brand_product_info .table th {width:20%; padding:14px 0; border-bottom:1px solid #707070; color:#555; text-align:left;}
+.brand_product_info .table td {padding:14px 0; border-bottom:1px solid #707070; box-sizing:border-box;}
+.brand_product_info .table strong {display:inline-block; width:70px; height:50px; margin-top:0; background-position:100% 50%; background-repeat:no-repeat; color:#555; font-weight:normal; font-size:13px; line-height:50px; vertical-align:middle;}
+.brand_product_info .table img {display:inline; margin-right:5px;}
+.brand_product_info .table span {display:inline-block; padding-left:10px; color:#888; font-size:12px; line-height:1.8; vertical-align:middle;}
+.brand_product_info .table .bottle strong {background-image:url(/assets/images/brand/common../img_bottle.png);}
+.brand_product_info .table .pet strong {background-image:url(/assets/images/brand/common../img_pet.png);}
+.brand_product_info .table .can strong {background-image:url(/assets/images/brand/common../img_can.png);}
+.brand_product_info .table .pocket strong {background-image:url(/assets/images/brand/common../img_pocket.png);}
+.brand_product_info .table .pack strong {background-image:url(/assets/images/brand/common../img_pack.png);}
+.brand_product_info .table .keg strong {background-image:url(/assets/images/brand/common../img_keg.png);}
+.brand_product_info .table .draft strong {background-image:url(/assets/images/brand/common../img_draft.png);}
+
+/*= sns */
+#brand_sns .centered_content {position:relative; width:auto;}
+#brand_sns ul {position:absolute; top:20px; right:25px; z-index:10;}
+#brand_sns li {float:left; margin-left:4px;}
+
+
+
+/*= 홈 */
+#brand_home .item {overflow:hidden; position:relative; min-width:1000px; height:580px;}
+#brand_home .item div {position:absolute; top:0; left:50%; width:2300px; margin-left:-1150px; text-align:center;}
+#brand_home .item div img {display:inline-block; width:auto;}
+/* #brand_home .item div {height:100%; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;} */
+#brand_home .owl-dots {position:absolute; bottom:30px; left:50%; width:100px; margin-left:-50px; font-size:0; text-align:center; white-space:nowrap;}
+#brand_home .owl-dot {display:inline-block; width:12px; height:12px; border-radius:6px; background:rgba(255, 255, 255, .5);}
+#brand_home .owl-dot.active {background:rgba(255, 255, 255, 1);}
+#brand_home .owl-dot + .owl-dot {margin-left:15px;}
+#brand_home .owl-nav {position:relative; max-width:1100px; margin: 0 auto;}
+#brand_home .owl-prev, #brand_home .owl-next {width:19px; height: 36px; font-size:0;}
+#brand_home .owl-prev {position: absolute; top:-270px; left: 0; padding-left: 55px; background: url('/assets/images/brand/common/btn_banner_prev.png') center 0  no-repeat}
+#brand_home .owl-next {position: absolute; top:-270px; right: 0; padding-right: 55px; background: url('/assets/images/brand/common/btn_banner_next.png') center 0  no-repeat}
+
+
+/*= 메뉴 */
+.brand_lnb_wrap {position:relative;}
+#brand_lnb {overflow:hidden; position:absolute; top:0; right:0; left:0; z-index:110; height:50px; background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.1);}
+#brand_lnb div {max-width:1000px; margin:0 auto;}
+#brand_lnb ul {margin:0 -15px; text-align:justify;}
+#brand_lnb ul:after {display:inline-block; width:100%; content:"";}
+#brand_lnb li {display:inline-block;}
+#brand_lnb a {display:block; height:47px; padding:0 15px; border-bottom:3px solid #fff; color:#000; font-weight:700; font-size:12px; line-height:54px; white-space:nowrap;}
+#brand_lnb .col_2 {text-align:center;}
+#brand_lnb .col_2 li {float:left; width:50%;}
+#brand_lnb .col_2 a {display:inline-block;}
+.on_brand #brand_lnb.fixed {position:fixed; left:200px;}
+
+
+
+/*= tvcf */
+#brand_tvcf {padding-bottom:80px; background:#1e1e1e;}
+#brand_tvcf .brand_section_header .title {color:#fff;}
+#brand_tvcf .brand_section_header .title:before {background:#fff;}
+#brand_tvcf .detail {width:800px; margin:0 auto;}
+#brand_tvcf .detail .movie_info {background:#292929;}
+#brand_tvcf .detail .movie_info:after {display:table; clear:both; content:"";}
+#brand_tvcf .detail .movie_info .movie {overflow:hidden; float:left; width:560px; height:315px; background:#000;}
+#brand_tvcf .detail .movie_info .movie iframe {width:100%; height:100%;}
+#brand_tvcf .detail .movie_info .info_wrap {float:right; width:240px; padding:30px 30px 0; line-height:20px; box-sizing:border-box; word-wrap:break-word; word-break:keep-all;}
+#brand_tvcf .detail .movie_info .info {overflow:hidden; max-height:100px; color:#bdbdbd; letter-spacing:-.025em;}
+#brand_tvcf .detail .movie_info .content {overflow:auto; max-height:100px; margin:15px 0 20px; font-size:12px;}
+#brand_tvcf .detail .movie_info .sns ul:after {display:table; clear:both; content:"";}
+#brand_tvcf .detail .movie_info .sns li {float:left;}
+#brand_tvcf .detail .movie_info .sns li + li {padding-left:10px;}
+#brand_tvcf .detail .movie_info .sns a {display:block; width:20px; height:20px; background-repeat:no-repeat; background-position:50% 50%; text-indent:-9999em;}
+#brand_tvcf .detail .movie_info .sns .facebook {background-image:url(/assets/images/brand/common/icon_facebook.png);}
+#brand_tvcf .detail .movie_info .sns .twitter {background-image:url(/assets/images/brand/common/icon_twitter.png);}
+#brand_tvcf .detail .type ul:after {display:table; clear:both; content:"";}
+#brand_tvcf .detail .type li {float:left;}
+#brand_tvcf .detail .type button {display:block; height:30px; padding:0 15px; border:0; background:#000; color:#fff; font-size:12px; line-height:32px;}
+#brand_tvcf .detail .type .on {background:#0e62f8;}
+#brand_tvcf .list_wrap {position:relative; width:800px; margin:0 auto; padding-top:20px;}
+#brand_tvcf .list_wrap figure {height:96px; background:#292929; line-height:96px; text-align:center;}
+#brand_tvcf .list_wrap figure img {display:inline-block; width:auto; max-width:100%; max-height:100%; vertical-align:middle;}
+#brand_tvcf .list_wrap p {display:block; padding-top:10px; color:#c8c8c8; font-size:12px;}
+#brand_tvcf .list_wrap .on p {color:#0e62f8;}
+#brand_tvcf .control button {margin-top:35px; border-color:rgba(255,255,255,.2); background-color:#515151; background-color:rgba(81,81,81,.2);}
+#brand_tvcf .control .prev {background-image: url(../img/bu_pagination_prev_2.png);}
+#brand_tvcf .control .next {background-image: url(../img/bu_pagination_next_2.png);}
+
+
+
+/*= print */
+#brand_print .brand_section_header {width:800px; margin:0 auto;}
+#brand_print {padding-bottom:80px;}
+#brand_print .centered_content {position:relative;}
+#brand_print .list_wrap {position:relative; width:800px; margin:0 auto;}
+#brand_print .list_wrap .img {display:block; width:250px; height:348px; background-color:#fff; line-height:348px; text-align:center;}
+#brand_print .list_wrap .img img {display:inline-block; width:auto; max-width:100%; max-height:100%; vertical-align:middle;}
+#brand_print .list_wrap figcaption strong {display:block; padding:15px 0 5px; color:#222; font-weight:normal;}
+#brand_print .control button {margin-top:150px;}
+
+#brand_print_modal .modal_content {width:773px; margin:0 auto;}
+#brand_print_modal .modal_content .content_wrap {position:relative; width:593px; padding:50px 0; margin:0 auto;}
+#brand_print_modal .modal_content .box {padding-top:20px;}
+#brand_print_modal .modal_content .box:after {display:table; clear:both; content:"";}
+#brand_print_modal .modal_content .tit {padding-bottom:15px; border-bottom:2px solid #000; font-weight:400; font-size:18px; text-align:center;}
+#brand_print_modal .modal_content .img,
+#brand_print_modal .modal_content .textbox {float:left;}
+#brand_print_modal .modal_content .img {width:404px;}
+#brand_print_modal .modal_content .img img {width:369px;}
+#brand_print_modal .modal_content .textbox {width:189px; padding-top:7px;}
+#brand_print_modal .modal_content .stit {position:relative; padding-bottom:10px; color:#000; font-weight:400; font-size:18px;}
+#brand_print_modal .modal_content .stit:before {position:absolute; bottom:0; left:1px; width:13px; height:1px; background-color:#323232; content:"";}
+#brand_print_modal .modal_content .content {padding:25px 0;}
+#brand_print_modal .modal_content .content dl:after {display:table; clear:both; content:"";}
+#brand_print_modal .modal_content .content dt,
+#brand_print_modal .modal_content .content dd {float:left; font-size:14px;}
+#brand_print_modal .modal_content .content dt {clear:left; color:#555;}
+#brand_print_modal .modal_content .content dd {color:#999;}
+#brand_print_modal .modal_content .sns:after{display:table; clear:both; content:"";}
+#brand_print_modal .modal_content .sns li {float:left; padding-right:5px;}
+#brand_print_modal .modal_content .download {position:absolute; bottom:50px; right:62px;}
+#brand_print_modal .modal_content .pagination {border:0;}
+
+
+
+/*= wine */
+#brand_wine {padding-bottom:60px;}
+#brand_wine .brand_section_header .title {height:58px; font-weight:200; font-size:42px; line-height:1.1; vertical-align:top;}
+#brand_wine .brand_section_header .title:after {position:absolute; bottom:0; left:50%; width:30px; height:1px; margin-left:-15px; background:#000; content:"";}
+#brand_wine .list_wrap {border-top:2px solid #000;}
+#brand_wine .lnb {display:none; padding:20px 0; border-bottom:1px solid #ccc; line-height:22px;}
+#brand_wine .lnb strong {color:#c9c9c9; font-weight:600; font-size:12px;}
+#brand_wine .lnb ul {margin-top:-22px; padding-left:55px;}
+#brand_wine .lnb ul:after {display:table; clear:both; content:"";}
+#brand_wine .lnb li {float:left; padding-bottom:3px;}
+#brand_wine .lnb a {display:inline-block; padding:0 15px; height:22px; color:#555; font-size:12px; text-align:center;}
+#brand_wine .lnb a:hover,
+#brand_wine .lnb a.on {background:#60318e; color:#fff;}
+
+
+
+#brand_wine .area {display:none; padding:20px 0; border-bottom:1px solid #ccc; line-height:22px;}
+#brand_wine .area strong {color:#c9c9c9; font-weight:600; font-size:12px;}
+#brand_wine .area ul {margin-top:-22px; padding-left:55px;}
+#brand_wine .area ul:after {display:table; clear:both; content:"";}
+#brand_wine .area li {float:left; padding-bottom:3px;}
+#brand_wine .area a {display:inline-block; padding:0 15px; height:22px; color:#555; font-size:12px; text-align:center;}
+#brand_wine .area a:hover,
+#brand_wine .area a.on {background:#60318e; color:#fff;}
+
+
+#brand_wine .list li {min-height:260px; padding-left:260px;}
+#brand_wine .list li + li {border-top:1px solid #e6e5ea;}
+#brand_wine .list li:after {display:table; clear:both; content:"";}
+#brand_wine .list figure {float:left; width:230px; height:260px; margin-left:-230px; line-height:260px; text-align:center;}
+#brand_wine .list figure img {vertical-align:middle;}
+#brand_wine .list dl {padding:50px 0;}
+#brand_wine .list dt,
+#brand_wine .list dd {min-height:22px; font-size:14px; line-height:22px;}
+#brand_wine .list dt {color:#000; font-size:15px;}
+#brand_wine .list dd + dt {margin-top:10px;}
+#brand_wine .list dd {margin-top:-22px; padding-left:100px; word-wrap:break-word; word-break:keep-all;}
+#brand_wine .list .grade_wrap {position:relative; width:210px; text-align:center;}
+#brand_wine .grade_wrap [class^="label"] {position:absolute; top:0; height:22px; line-height:22px;}
+#brand_wine #bodyfeel {text-align:right;}
+#brand_wine .grade_wrap .label_1 {left:100px;}
+#brand_wine .grade_wrap .label_2 {right:0;}
+#brand_wine .grade_wrap [class^="grade_"] {display:inline-block; width:95px; height:22px; background:url(/assets/images/brand/wine/icon_grade.jpg) no-repeat;}
+#brand_wine .grade_wrap .grade_1 {background-position:-80px 50%;}
+#brand_wine .grade_wrap .grade_2 {background-position:-60px 50%;}
+#brand_wine .grade_wrap .grade_3 {background-position:-40px 50%;}
+#brand_wine .grade_wrap .grade_4 {background-position:-20px 50%;}
+#brand_wine .grade_wrap .grade_5 {background-position:0 50%;}
+#brand_wine .pagination {border-top:1px solid #333;}
+
+
+
+/*= sake */
+#brand_sake {padding-bottom:60px;}
+#brand_sake ul {border-top:2px solid #000;}
+#brand_sake li {min-height:282px; padding-left:260px;}
+#brand_sake li + li {border-top:1px solid #e6e5ea;}
+#brand_sake li:after {display:table; clear:both; content:"";}
+#brand_sake figure {float:left; width:230px; height:282px; margin-left:-230px; line-height:282px; text-align:center;}
+#brand_sake figure img {vertical-align:middle;}
+#brand_sake dl {padding:50px 0;}
+#brand_sake dt,
+#brand_sake dd {min-height:22px; font-size:14px; line-height:22px;}
+#brand_sake dt {color:#000; font-size:15px;}
+#brand_sake dd + dt {margin-top:10px;}
+#brand_sake dd {margin-top:-22px; padding-left:100px; word-wrap:break-word; word-break:keep-all;}

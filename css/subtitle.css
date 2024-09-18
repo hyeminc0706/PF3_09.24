@@ -1,0 +1,58 @@
+div#subtitle {
+  height: 480px;
+}
+div#subtitle .titleani {
+  position: relative;
+  max-width: 100%;
+}
+div#subtitle .slick-arrow{
+  overflow: hidden;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 27px;
+}
+div#subtitle .slick-prev{
+  left: 15.5%;
+  padding-left: 55px;
+  background: rgba(255,255,255,0.5) url(../img/prev.png) no-repeat 22px 50%;
+  z-index: 1;
+}
+div#subtitle .titleani .slick-arrow:hover{
+  width: 144.4px;
+  transition: width .3s ease, background-position .3s ease; 
+}
+div#subtitle .slick-next{
+  right: 20.5%;
+  padding-right: 55px;
+  background: rgba(255,255,255,0.5) url(../img/next.png) no-repeat 24px 50%;
+}
+div#subtitle .slick-next:hover{
+  background-position: 112px 50%;
+}
+div#subtitle .titleani img {
+  height: 480px;
+  width: 100%;
+}
+div#subtitle .titleani img:nth-child(2){
+  transform: translateX(2%);
+}
+div#subtitle .titleani .slick-dots{
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  width: 310px;
+  margin-left: -150px;
+  font-size: 0;
+  text-align: center;
+}
+div#subtitle .titleani .slick-dots li.slick-active{
+  border: 1px solid #ffffffab;
+  width: 27px;
+  height: 27px;
+  border-radius: 15px; 
+  position: relative;
+}
+.slick-dots li button{
+  width: 30px; 
+}
